@@ -8,21 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./js/App.js"></script>
     <title>My Personal Website</title>
 </head>
-<body>
+<body onload="clock();">
     <!-- Navigation -->
     <section id="navigation">
     <header class="p-3 text-bg-dark">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <img src="./images/brand.jpg" alt="brand name" width="75px" height="auto" class="brand"/>
-    
+            <img src="./images/brand.jpg" alt="brand name" width="75px" height="auto" class="brand"/>    
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-4">
               <li><a href="#whoami" class="nav-link px-2 text-white nav-columns">Home</a></li>
               <li><a href="#education" class="nav-link px-2 text-white nav-columns">About</a></li>
-              <li><a href="#footer " class="nav-link px-2 text-white nav-columns">Contact</a></li>            
+              <li><a href="#footer " class="nav-link px-2 text-white nav-columns">Contact</a></li>
+              <li><a href="mailto:alperelmaser11@gmail.com">E-mail me!</a></li>                  
             </ul>
+            <div style="text-align:center;">
+              📅
+              <b id="t-0">00/00/0000</b>
+              ⏰
+              <b id="t-2">00:00:00</b>
+          </div>
           </div>
         </div>
       </header>
@@ -52,7 +59,12 @@
                   </svg>Who am I ?</h1>
                   <img class="pp mt-3 mb-4" src="./images/pp.jpg"/>
                 <p class="col-lg-8 mx-auto lead">
-                  Hi, i'm <strong>Alper Elmaser</strong>. I'm a <strong>software developer</strong> and trying to be a <strong>web developer</strong>. Husband, movie junkie and a desperate Boston Celtics follower.
+                  Hi, i'm <strong>Alper Elmaser</strong>. I'm a <strong>software developer</strong> and trying to be the best version of myself in my career and life. A husband, movie junkie and a desperate Boston Celtics follower.
+                </p>
+
+                <p class="col-lg-8 mx-auto lead">
+                  I was born on April 9th, 1996 in İzmir. After I graduated from my university I've served in military for 6 months. After that experience, I had started 
+                  Özka Lastik as a Software Developer Engineer in 2021. 
                 </p>
               </div>
             </div>
@@ -99,19 +111,22 @@
                     <path d="M9.5 2.672a.5.5 0 1 0 1 0V.843a.5.5 0 0 0-1 0v1.829Zm4.5.035A.5.5 0 0 0 13.293 2L12 3.293a.5.5 0 1 0 .707.707L14 2.707ZM7.293 4A.5.5 0 1 0 8 3.293L6.707 2A.5.5 0 0 0 6 2.707L7.293 4Zm-.621 2.5a.5.5 0 1 0 0-1H4.843a.5.5 0 1 0 0 1h1.829Zm8.485 0a.5.5 0 1 0 0-1h-1.829a.5.5 0 0 0 0 1h1.829ZM13.293 10A.5.5 0 1 0 14 9.293L12.707 8a.5.5 0 1 0-.707.707L13.293 10ZM9.5 11.157a.5.5 0 0 0 1 0V9.328a.5.5 0 0 0-1 0v1.829Zm1.854-5.097a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L8.646 5.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0l1.293-1.293Zm-3 3a.5.5 0 0 0 0-.706l-.708-.708a.5.5 0 0 0-.707 0L.646 13.94a.5.5 0 0 0 0 .707l.708.708a.5.5 0 0 0 .707 0L8.354 9.06Z"/>
                   </svg>Skills & Certificates</h1>
                   <p class="col-lg-8 mx-auto lead">
-                    Programming ; <code> Javascript, C#, Python, HTML, CSS, PHP</code>       
+                    Programming ; <code> JavaScript, C#, Python, HTML, CSS, SQL</code>       
                   </p>
                   
                   <p class="col-lg-8 mx-auto lead">
-                    Related ; <strong> ASP.NET, Node.js, MongoDB, React.js, Bootstrap, jQuery, MySQL, GitHub</strong>           
+                    Related ; <strong> ASP.NET, Node.js , Express.js,  RESTful API, React, OPC, ASP.NET, MSSQL</strong>           
                   </p>
 
                   <p class="col-lg-8 mx-auto lead">
-                    Other ; <strong> Calm-headed, Eye-for-detail, problem solving attitude </strong>           
+                    Personal Skills ; <strong> Composed, Easy going, Eye-for-detail, problem solving attitude </strong>           
                   </p>
 
                   <p class="col-lg-8 mx-auto lead">
                     Language; <strong> English (C1), Turkish (Native) </strong>           
+                  </p>
+                  <p class="col-lg-8 mx-auto lead">
+                    Certificates; <strong><a href="https://www.coursera.org/account/accomplishments/verify/9ZDM8JR3FXPG">Introduction to Web Development with HTML, CSS, JavaScript</a>  ,<a href="https://courses.cognitiveclass.ai/certificates/b72766c52c704a89b522fc77d930cb10">Python 101 for Data Science</a></strong>           
                   </p>
                 </div>
               </div>
@@ -126,10 +141,7 @@
                   <p class="col-lg-8 mx-auto lead">
                     <p><strong>SAP ME / MII Integration</strong></p>
                     <p>
-                      Currently working on a SAP MII / ME system integration project at Özka Lastik. Creating web pages
-and their backend transactions for employees’ use. For creating that, mostly using Javascript, HTML, CSS
-(combining all of them in SAPUI5 Framework) and T-SQL languages. Also we using and maintaining a C#
-based software to keep tracking the process system.
+                      Controlling over than 300 process machines with efficient web pages that we created with using HTML & CSS and Javascript. Maintained and developed server-side applications using SAPUI5 Framework. Also developed a C# based program for reporting and functionality of quality process on site. For storing datas, we using SAP HANA database system and MSSQL server system.
                     </p>
                     <p><strong>Location Determination in Real Time and Presentation of Location on a Website</strong></p>
                     <p>
