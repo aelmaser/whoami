@@ -12,3 +12,7 @@ function clock(){
         document.getElementById('t-2').textContent=new Date().toLocaleTimeString(); // clock
     }, window.rt);
 }
+
+function comingSoon() {
+    alert("Coming Soon!");
+}
